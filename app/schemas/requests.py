@@ -1,6 +1,5 @@
 from pydantic import BaseModel, EmailStr
 
-
 class BaseRequest(BaseModel):
     # may define additional fields or config shared across requests
     pass
@@ -8,7 +7,6 @@ class BaseRequest(BaseModel):
 
 class RefreshTokenRequest(BaseRequest):
     refresh_token: str
-
 
 class UserUpdatePasswordRequest(BaseRequest):
     password: str
