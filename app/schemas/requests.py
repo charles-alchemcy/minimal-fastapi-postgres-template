@@ -9,7 +9,6 @@ class BaseRequest(BaseModel):
 class RefreshTokenRequest(BaseRequest):
     refresh_token: str
 
-
 class UserUpdatePasswordRequest(BaseRequest):
     password: str
 
