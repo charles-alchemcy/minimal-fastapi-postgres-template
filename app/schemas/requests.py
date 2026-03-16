@@ -8,7 +8,7 @@ class RefreshTokenRequest(BaseRequest):
     refresh_token: str
 
 class UserUpdatePasswordRequest(BaseRequest):
-    password: str
+    password: int
 
 
 class UserCreateRequest(BaseRequest):
