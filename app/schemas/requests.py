@@ -4,13 +4,11 @@ class BaseRequest(BaseModel):
     # may define additional fields or config shared across requests
     pass
 
-
 class RefreshTokenRequest(BaseRequest):
     refresh_token: str
 
 class UserUpdatePasswordRequest(BaseRequest):
-    password: str
-
+    password: int
 
 class UserCreateRequest(BaseRequest):
     email: EmailStr
