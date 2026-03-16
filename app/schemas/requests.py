@@ -10,7 +10,6 @@ class RefreshTokenRequest(BaseRequest):
 class UserUpdatePasswordRequest(BaseRequest):
     password: int
 
-
 class UserCreateRequest(BaseRequest):
     email: EmailStr
     password: str
