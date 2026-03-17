@@ -13,6 +13,7 @@ RUN poetry export -o /requirements.txt --without-hashes
 FROM base AS final
 COPY --from=poetry /requirements.txt .
 
+
 # Create venv, add it to path and install requirements
 RUN python -m venv /venv
 ENV PATH="/venv/bin:$PATH"
