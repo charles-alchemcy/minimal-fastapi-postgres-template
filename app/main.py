@@ -5,6 +5,7 @@ from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from app.api.api_router import api_router, auth_router
 from app.core.config import get_settings
 
+
 app = FastAPI(
     title="minimal fastapi postgres template",
     version="6.1.0",
