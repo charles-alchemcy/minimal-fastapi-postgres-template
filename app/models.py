@@ -5,6 +5,7 @@
 # https://alembic.sqlalchemy.org/en/latest/tutorial.html
 # Note, it is used by alembic migrations logic, see `alembic/env.py`
 
+
 # Alembic shortcuts:
 # # create migration
 # alembic revision --autogenerate -m "migration_name"
