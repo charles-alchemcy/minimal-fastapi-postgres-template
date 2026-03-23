@@ -8,6 +8,7 @@
 # 2. `.env` file in root folder of project
 # 3. Default values
 #
+
 # "sqlalchemy_database_uri" is computed field that will create valid database URL
 #
 # See https://pydantic-docs.helpmanual.io/usage/settings/
