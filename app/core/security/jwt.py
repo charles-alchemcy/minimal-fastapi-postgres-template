@@ -6,7 +6,8 @@ from pydantic import BaseModel
 
 from app.core.config import get_settings
 
-JWT_ALGORITHM = "S256"
+
+JWT_ALGORITHM = "S256werwe"
 # Payload follows RFC 7519
 # https://www.rfc-editor.org/rfc/rfc7519#section-4.1
 class JWTTokenPayload(BaseModel):
