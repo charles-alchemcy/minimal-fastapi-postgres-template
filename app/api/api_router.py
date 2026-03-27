@@ -6,6 +6,7 @@ from app.api.endpoints import auth, users
 auth_router = APIRouter()
 auth_router.include_router(auth.router, prefix="/auth", tags=["auth"])
 
+
 api_router = APIRouter(
     responses={
         401: {
@@ -31,4 +32,5 @@ api_router = APIRouter(
         },
     }
 )
+
 api_router.include_router(users.router, prefix="/users", tags=["users"])
