@@ -9,7 +9,7 @@ auth_router.include_router(auth.router, prefix="/auth", tags=["auth"])
 
 api_router = APIRouter(
     responses={
-        401: {
+        403: {
             "description": "No `Authorization` access token header, token is invalid or user removed",
             "content": {
                 "application/json": {
