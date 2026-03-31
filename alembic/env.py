@@ -4,7 +4,6 @@ from logging.config import fileConfig
 from sqlalchemy import Connection, engine_from_config, pool
 from sqlalchemy.ext.asyncio import AsyncEngine
 
-
 from alembic import context
 from app.core.config import get_settings
 
@@ -18,7 +17,7 @@ fileConfig(config.config_file_name)  # type: ignore
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-# from myapp import mymodel
+
 # target_metadata = mymodel.Base.metadata
 from app.models import Base  # noqa
 
